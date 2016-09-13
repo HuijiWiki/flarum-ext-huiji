@@ -30,9 +30,9 @@ System.register('reasno/flarum-huiji/main', ['flarum/extend', 'flarum/components
             ));
           }
         });
-        extend(UserPage.prototype, 'navItems', function (items) {
-          if (items.has('settings')) {
-            items.remove('settings');
+        extend(SessionDropdown.prototype, 'items', function (items) {
+          if (items.has('logOut')) {
+            items.remove('logOut');
           }
         });
       });

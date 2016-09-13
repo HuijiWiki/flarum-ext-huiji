@@ -10,9 +10,9 @@ app.initializers.add('reasno-flarum-ext-huiji', function() {
 	items.replace('logIn', <a href="http://www.huiji.wiki/wiki/Special:Login?returnto=forum:" className="Button Button-logIn">登录</a>);
     }
   });
-  extend(UserPage.prototype, 'navItems', function(items) {
-    if (items.has('settings')){
-        items.remove('settings');
+  extend(SessionDropdown.prototype, 'items', function(items) {
+    if (items.has('logOut')){
+        items.remove('logOut');
     }
   });
 });
