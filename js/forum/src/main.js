@@ -1,6 +1,6 @@
 import { extend } from 'flarum/extend';
 import HeaderSecondary from 'flarum/components/HeaderSecondary';
-import UserPage from 'flarum/components/UserPage';
+import SessionDropdown from 'flarum/components/SessionDropdown';
 app.initializers.add('reasno-flarum-ext-huiji', function() {
   extend(HeaderSecondary.prototype, 'items', function(items) {
     if (items.has('signUp')){

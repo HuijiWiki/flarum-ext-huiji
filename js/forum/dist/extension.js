@@ -1,16 +1,16 @@
 'use strict';
 
-System.register('reasno/flarum-huiji/main', ['flarum/extend', 'flarum/components/HeaderSecondary', 'flarum/components/UserPage'], function (_export, _context) {
+System.register('reasno/flarum-huiji/main', ['flarum/extend', 'flarum/components/HeaderSecondary', 'flarum/components/SessionDropdown'], function (_export, _context) {
   "use strict";
 
-  var extend, HeaderSecondary, UserPage;
+  var extend, HeaderSecondary, SessionDropdown;
   return {
     setters: [function (_flarumExtend) {
       extend = _flarumExtend.extend;
     }, function (_flarumComponentsHeaderSecondary) {
       HeaderSecondary = _flarumComponentsHeaderSecondary.default;
-    }, function (_flarumComponentsUserPage) {
-      UserPage = _flarumComponentsUserPage.default;
+    }, function (_flarumComponentsSessionDropdown) {
+      SessionDropdown = _flarumComponentsSessionDropdown.default;
     }],
     execute: function () {
       app.initializers.add('reasno-flarum-ext-huiji', function () {
